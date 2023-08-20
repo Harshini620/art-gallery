@@ -8,3 +8,32 @@ Online Art Gallery is an online application, which is used to manage all informa
 * Object-Oriented PHP: Learn how to structure your code using object-oriented programming (OOP) principles for improved maintainability and code organization.
 * MVC Design Pattern: Understand and implement the Model-View-Controller (MVC) design pattern to separate concerns and achieve better code structure.
 * Documentation: Detailed documentation guides you through the project structure, code explanations, and usage instructions.
+# Installation
+Install XAMPP or WAMPP.
+
+Open XAMPP Control panal and start [apache] and [mysql] .
+
+Download project from github 
+
+extract files in C:\xampp\htdocs.
+
+open link localhost/phpmyadmin
+
+click on new at side navbar.
+
+give a database name as (onlineshop) hit on create button.
+
+after creating database name click on import.
+
+browse the file in directory[db/artharsh.sql].
+
+after importing successfully.
+
+open any browser and type http://localhost/artgallery
+
+first register and then login
+
+admin login details Email=harsh@gmail.com or  Password=harsh.
+user login details Email=rathi@gmail.com or  Password=rathi.
+artist login details Email=nila@gmail.com or  Password=nila.
+
