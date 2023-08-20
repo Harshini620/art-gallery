@@ -21,4 +21,15 @@ Online Art Gallery is an online application, which is used to manage all informa
 * admin login details Email=harsh@gmail.com or  Password=harsh.
 user login details Email=rathi@gmail.com or  Password=rathi.
 artist login details Email=nila@gmail.com or  Password=nila.
-
+# Screenshots
+![Screenshot (73)](https://github.com/Harshini620/artgallery/assets/134605084/c154c093-267b-4ec3-bfdb-6449d9a4c129)
+![Screenshot (61)](https://github.com/Harshini620/artgallery/assets/134605084/50af7c87-3f4b-405f-8970-0fa47f3f7ee0)
+![Screenshot (74)](https://github.com/Harshini620/artgallery/assets/134605084/03b3abed-abe3-41bc-b130-ab009a716c6b)
+![Screenshot (75)](https://github.com/Harshini620/artgallery/assets/134605084/dd36ab62-a126-4d87-988e-1f928096c6a2)
+![Screenshot (76)](https://github.com/Harshini620/artgallery/assets/134605084/176fc565-c392-48fa-b685-2d0ecfe303c3)
+![Screenshot (79)](https://github.com/Harshini620/artgallery/assets/134605084/0be59217-8f27-4d4c-8906-74ea5841bfb7)
+![Screenshot (77)](https://github.com/Harshini620/artgallery/assets/134605084/1163d729-96b5-4dd9-8cbd-81c5fa2f69d1)
+![Screenshot (78)](https://github.com/Harshini620/artgallery/assets/134605084/1741a31e-4eea-4adf-b544-9c035f9aaa67)
+![Screenshot (80)](https://github.com/Harshini620/artgallery/assets/134605084/19aeccf0-0f2c-42a7-9314-0a2b7ecb6aaa)
+![Screenshot (81)](https://github.com/Harshini620/artgallery/assets/134605084/9ce18619-9838-4fc9-9861-7cbd029ad407)
+![Screenshot (83)](https://github.com/Harshini620/artgallery/assets/134605084/c7141af3-6b51-4e41-b625-7a55fe1ea5d5)
