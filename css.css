@@ -1,0 +1,15 @@
+.orders input[type="date"]{
+    background-color:#13131a;
+    color: #fff;
+    width: 17%;
+    height: 5%;
+    border:.1rem solid rgb(194, 190, 190);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    padding:1.2rem 1.4rem;
+    font-size: 1.8rem;
+ }
+ label{
+      font-size:1.8rem;
+      color:#fff;
+   }

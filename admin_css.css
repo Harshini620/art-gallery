@@ -1,0 +1,512 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   transition:all .2s linear;
+}
+   label{
+      font-size:1.8rem;
+      color:#fff;
+   }
+*::selection{
+   background-color: #d3ad7f;
+   color:#fff;
+}
+*::-webkit-scrollbar{
+   height: .5rem;
+   width: 1rem;
+}
+*::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+*::-webkit-scrollbar-thumb{
+   background: #9b9b9b;
+   border-radius: 5rem;
+}
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+body{
+   background-color: #13131a;
+}
+section{
+   padding:3rem 2rem;
+}
+::ms-reveal{
+  filter:invert(100%);
+}
+.title{
+   text-align: center;
+   margin-bottom: 2rem;
+   text-transform: uppercase;
+   color: #d3ad7f;
+   font-size: 4rem;
+}
+.title1{
+   text-align: center;
+   margin-bottom: 2rem;
+   text-transform: none;
+   color: #d3ad7f;
+   font-size: 3rem;
+}
+.title1 span{
+   text-align: center;
+   margin-bottom: 2rem;
+   text-transform: uppercase;
+   color: #faf7f4;
+   font-size: 3rem;
+}
+.empty{
+   padding:1.5rem;
+   text-align: center;
+   border:.1rem solid #333;
+   background-color: #13131a;
+   color:#c0392b;
+   font-size: 2rem;
+}
+.message{
+   position: sticky;
+   top:0; left: 0; right: 0;
+   margin:0 auto;
+   max-width: 1200px;
+   background-color: #13131a;
+   padding:1.5rem 7%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   z-index: 10000;
+   color:#fff;
+   gap:1.5rem;
+}
+.message span{
+   font-size: 2rem;
+   color:#fff;
+}
+.message i{
+   cursor: pointer;
+   color:#c0392b;
+   font-size: 2.5rem;
+}
+.message i:hover{
+   transform: rotate(90deg);
+}
+@keyframes fadeIn {
+   0%{
+      transform: translateY(1rem);
+      opacity: .2s;
+   }
+}
+.header{
+   position: sticky;
+   top:0; left:0; right:0;
+   z-index: 1000;
+   background-color: #13131a;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+.header .flex{
+   display: flex;
+   background-color: #13131a;
+   align-items: center;
+   padding:2rem;
+   justify-content: space-between;
+   position: relative;
+   max-width: 1200px;
+   margin:0 auto;
+}
+.header .flex .logo{
+   font-size: 2.5rem;
+   color: #fff;
+}
+.header .flex .logo span{
+   color: #d3ad7f;
+}
+.header .flex .navbar a{
+   margin:0 1rem;
+   font-size: 2rem;
+   color: #fff;
+   text-transform: capitalize;
+}
+.header .flex .navbar a:hover{  
+   color:#d3ad7f;;
+   border-bottom: .1rem solid #d3ad7f;;
+   padding-bottom: .5rem;
+}
+.header .flex .icons div{
+   margin-left: 1.5rem;
+   font-size: 2.5rem;
+   cursor: pointer;
+   color: #fff;
+}
+.header .flex .icons div:hover{
+   color: #d3ad7f;
+}
+.header .flex .account-box{
+   position: absolute;
+   top:120%; right:2rem;
+   width: 35rem;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   border-radius: .5rem;
+   padding:2rem;
+   text-align: center;
+   border-radius: .5rem;
+   border:.1rem solid #333;
+   background-color: #13131a;
+   color:#fff;
+   display: none;
+   animation:fadeIn .2s linear;
+}
+.header .flex .account-box.active{
+   display: inline-block;
+}
+.header .flex .account-box p{
+   font-size: 1.5rem;
+   color: #fff;
+   margin-bottom: 1.5rem;
+}
+.header .flex .account-box p span{
+   color:#d3ad7f;;
+}
+.header .flex .account-box .delete-btn{
+   margin-top: 0;
+}
+.header .flex .account-box div{
+   margin-top: 1.5rem;
+   font-size: 2rem;
+   color: #f5f5f5;
+}
+.header .flex .account-box div a{
+   color: #d3ad7f;
+}
+.header .flex .account-box div a:hover{
+   text-decoration: underline;
+}
+#menu-btn{
+   display: none;
+}
+.users .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 30rem);
+   justify-content: center;
+   gap:1.5rem;
+   max-width: 1200px;
+   margin:0 auto;
+   border-radius:.5rem;
+   border-radius: .5rem;
+   align-items: flex-start;
+}
+.users .box-container .box{
+   background-color: #13131a;
+   padding:2rem;
+   border-radius: .5rem;
+   border:.1rem solid #333;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   border-radius: .5rem;
+   text-align: center;
+}
+.users .box-container .box p{
+   padding-bottom: 1.5rem;
+   font-size: 2rem;
+   color: #fff;
+}
+.users .box-container .box p span{
+   color:#d3ad7f;;
+}
+.users .box-container .box .delete-btn{
+   margin-top: 0;
+}
+@media (max-width:991px){
+   html{
+      font-size: 55%;
+   }
+}
+@media (max-width:768px){
+   #menu-btn{
+      display: inline-block;
+   }
+   .header .flex .navbar{
+      position: absolute;
+      top:99%; left:0; right:0;
+      background-color: #13131a;
+      border-top: .1rem solid #333;
+      border-bottom: .1rem solid #333;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+   }
+   .header .flex .navbar.active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+   }
+   .header .flex .navbar a{
+      margin:2rem;
+      display: block;
+   }
+   .user-table{
+    overflow-x: scroll;
+ }
+ .user-table table{
+    width: 90rem;
+ }
+}
+@media (max-width:450px){
+   html{
+      font-size: 50%;
+   }
+   .title{
+      font-size: 3rem;
+   }
+}
+.user-table table{
+    width: 100%;
+    text-align: center;
+    border:.1rem solid #949292;
+    border-collapse: collapse;
+ }
+ .user-table table thead th{
+    padding:1.5rem;
+    font-size: 5rem;
+    background-color:  #13131a;
+    color:#d3ad7f;
+    text-transform: capitalize;
+    border:.1rem solid #949292;
+ }
+ .user-table table td{
+    padding:1.5rem;
+    font-size: 2.5rem;
+    color:#fff;
+    background-color: #13131a;
+    border:.1rem solid #949292;
+ }
+ .user-table table tbody td img:hover{
+   transform: scale(1.3);
+}
+ .user-table table thead th:hover{
+    letter-spacing: .2rem;
+ }
+ .option-btn{
+    background-color: #d3ad7f;
+ }
+ .delete-btn{
+    background-color: #dc143c;
+ }
+ .btnn,
+ .update-btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    text-transform: capitalize;
+    background: #dc143c;
+    cursor: pointer;
+    border:.1rem solid #333;   
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   border-radius: .5rem;
+   padding:1.2rem 1.4rem;
+}
+.btnn:hover{
+    letter-spacing: .2rem;
+}
+.btn,
+.option-btn,
+.delete-btn,
+.white-btn{
+   display: inline-block;
+   margin-top: 1rem;
+   padding:1rem 3rem;
+   cursor: pointer;
+   color:#fff;
+   font-size: 1.8rem;
+   border-radius: .5rem;
+   text-transform: capitalize;
+}
+.option-btn:hover{
+   letter-spacing: .2rem;
+}
+.white-btn,
+.btn{
+   background-color: #d3ad7f;;
+}
+.white-btn:hover{
+   background-color: #fff;
+   color:#333;
+}
+.user-table table td form select{
+    border-radius: .5rem;
+    width: 100%;
+    background-color: #13131a;
+    border:.1rem solid #333;
+    padding:1.2rem 1.4rem;
+    font-size: 1.3rem;
+    color: #fff;
+ }
+ .orders input[type="date"]{
+    background-color:#13131a;
+    color: #fff;
+    width: 17%;
+    height: 5%;
+    border:.1rem solid rgb(194, 190, 190);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    padding:1.2rem 1.4rem;
+    font-size: 1.8rem;
+ }
+ .user-table table{
+    width: 100%;
+    text-align: center;
+ }
+ .user-table table thead th{
+    padding:1.5rem;
+    font-size: 1.7rem;
+    background-color:  #13131a;
+    color:#d3ad7f;
+    text-transform: capitalize;
+ }
+ .user-table table td{
+    font-size: 1.5rem;
+    color:#fff;
+    background-color: #13131a;
+ }
+ .user-table table thead th:hover{
+    letter-spacing: .2rem;
+ }
+ .add-products form{
+    background-color: #13131a;
+    border-radius: .5rem;
+    padding:2rem;
+    text-align: center;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border:.1rem solid #949292;
+    max-width: 50rem;
+    margin:0 auto;
+ }
+ .add-products form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color:#fff;
+    margin-bottom: 1.5rem;
+ }
+ .add-products form .box{
+    width: 100%;
+    background-color: #13131a;
+    border-radius: .5rem;
+    margin:1rem 0;
+    padding:1.2rem 1.4rem;
+    color: #fff;
+    font-size: 1.8rem;
+    border:.1rem solid #949292;
+ }
+ #style-1::-webkit-scrollbar-track
+ {
+    
+    background-color: transparent;
+ }
+ 
+ #style-1::-webkit
+ {
+    width: 12px;
+    background-color: transparent;
+ }
+ .force-overflow
+ {
+    min-height:450px;
+ }
+ #wrapper{
+    width:500px;
+    margin:auto;
+ }
+ .scrollbar
+ {
+    margin-left:30px;
+    float: left;
+    height : 600px;
+    width: 510px;
+    background: black;
+    overflow-y: scroll;
+    margin-bottom:25px;
+ }
+ #style-1::-webkit-scrollbar-thumb
+ {  
+    border-radius: 5rem;
+    background-color:  #9b9b9b;;
+ }
+ .edit-product-form{
+    min-height: 100vh;
+    background-color: rgba(0,0,0,.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:2rem;
+    overflow-y: scroll;
+    position: fixed;
+    top:0; left:0; 
+    z-index: 1200;
+    width: 100%;
+ }
+ .edit-product-form form{
+    width: 50rem;
+    padding:2rem;
+    text-align: center;
+    border-radius: .5rem;
+    background-color: #13131a;
+ } 
+ .edit-product-form form img{
+    height: 30rem;
+    margin-bottom: 1rem;
+}    
+.edit-product-form form .box{
+    margin:1rem 0;
+    padding:1.2rem 1.4rem;
+    border:.1rem solid #333;
+    border-radius: .5rem;
+    background-color: #13131a;
+    font-size: 1.8rem;
+    color:#fff;
+    width: 100%;
+ }
+  
+ .product_theme{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap:1.5rem;
+    justify-content: center;
+    align-items: flex-start;
+ }
+ .product_theme{
+    padding-bottom: 0;
+ }
+ .product_theme button{
+        margin-top: 1rem;
+        display: inline-block;
+        padding:.9rem 3rem;
+        font-size: 1.7rem;
+        color:#fff;
+        text-transform: capitalize;
+        background: #13131a;
+        cursor: pointer;
+        border:.1rem solid #b8b6b6;   
+       box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+       border-radius: .5rem;
+       padding:1.2rem 1.4rem;
+    
+ }
+ .product_theme button:hover{
+    background-color: var(--black);
+    color: #d3ad7f;
+ }
+ .update-btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:1rem 2rem;
+    cursor: pointer;
+    color:white;
+    width:100%;
+    background-color: #f39c12;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    text-transform: capitalize;
+    box-align:center;
+    border-radius:5px;
+ }
+ 

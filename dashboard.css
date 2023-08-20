@@ -1,0 +1,39 @@
+.dashboard .box-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:1.5rem;
+    max-width: 1200px;
+    margin:0 auto;
+    align-items: flex-start;
+ }
+.dashboard .box-container .box
+{
+    border-radius: .8rem;
+    padding:2rem;
+    background-color: #13131a;
+    box-shadow: #f1f1f3;
+    border: 1px solid grey;
+    text-align: center;
+ }
+ .dashboard .box-container .box p:hover
+{
+    background-color: black;
+ }
+ .dashboard .box-container .box h3
+ {
+    font-size: 5rem;
+    color:#d3ad7f; 
+ }
+ 
+ .dashboard .box-container .box p
+ {
+    margin-top: 1.5rem;
+    padding:1.5rem;
+    background-color: #13131a;
+    color:#fff;
+    font-size: 2rem;
+    border-radius: .8rem;
+    border: 1px solid grey;
+    text-transform: capitalize;
+ }

@@ -1,0 +1,76 @@
+@media print{
+   * {
+      color:black !important;
+   }
+    .header, .header *
+    {
+       display: none;
+    }
+    .user-table table{
+       width:100%;
+    }
+    .user-table, .user-table *, .user-table table tbody tr td{
+       visibility: visible;
+       color:black;
+       
+    }
+    .btnn{
+       display: none;
+    } 
+    #remove{
+       display: none;
+    }
+    .user-table table td form select{
+        color:black;
+    }
+    .user-table table thead th, .box-container .box p{
+      color:black;
+      text-align: center;
+      font-size:2rem;
+      font-style: bold;
+    }
+    .hide, .title, .title span
+    {
+       visibility: visible;
+       color:black;
+       text-align: center;
+       font-size:3rem;
+       font-style: bold;
+       text-decoration: underline;
+    }
+    .artist .box-container .box .name, p{
+      color:black;
+      text-align: center;
+      font-size:2rem;
+      font-style: bold;
+      text-decoration: underline;
+    }
+    
+ }
+ .header .icons a{
+   color:#fff;
+   cursor: pointer;
+   font-size: 2.5rem;
+   margin-left: 2rem;
+}
+.header .icons a:hover{
+   color:#d3ad7f;
+}
+ #hide
+ {
+    display: none;
+ }
+ .title1{
+   text-align: center;
+   margin-bottom: 2rem;
+   text-transform: none;
+   color: #d3ad7f;
+   font-size: 3rem;
+}
+.title1 span{
+   text-align: center;
+   margin-bottom: 2rem;
+   text-transform: uppercase;
+   color: #faf7f4;
+   font-size: 3rem;
+}

@@ -1,0 +1,69 @@
+@media print{
+     
+  .artist .box-container .box p{
+      color:black !important;
+      font-size:2rem;
+      font-style: bold;
+    }
+    .artist .box-container .box p span{
+      color:#d3ad7f !important;
+      font-size:2rem;
+      font-style: bold;
+      font-weight:900;
+    }
+    #remove{
+       display: none;
+    }
+    .artist .box-container .box .name{
+    padding:1rem 0;
+    font-size: 2rem;
+    color:#333 !important;
+    text-transform: capitalize;
+ }
+  .artist .box-container .box .image img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+ }
+   }
+ .artist .box-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 40rem);
+    align-items: flex-start;
+    gap:1.5rem;
+    justify-content: center;
+    background-color: black;
+    padding:1.2rem 1.4rem;
+    text-align: center;
+ } 
+  .artist .box-container .box .name{
+    padding:1rem 0;
+    font-size: 2rem;
+    color:#fff;
+    text-transform: capitalize;
+ }
+ .artist .box-container .box{
+    border:.1rem solid rgba(255,255,255,.3);
+    background-color: #13131a;
+    padding:2rem;
+    border-radius: .5rem;
+    text-transform: none;
+ } 
+ .artist .box-container .box p{
+    padding:1rem 0;
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: none;
+ }
+ .artist .box-container .box p span{
+    color: #d3ad7f;
+    text-transform: none;
+ } 
+ .artist .box-container .box .image img{
+    height: 50%;
+    object-fit: cover;
+
+    width: 100%;
+ }

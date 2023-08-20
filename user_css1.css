@@ -1,0 +1,33 @@
+.artist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap:1.5rem;
+    justify-content: center;
+    align-items: flex-start;
+ }
+ .artist{
+    padding-bottom: 0;
+ }
+ .artist a{
+    padding:1.5rem;
+    text-align: center;
+    border:.1rem solid rgba(255,255,255,.3);
+    background-color: #13131a;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color:white;
+ }
+ .artist a:hover{
+    background-color: var(--black);
+    color: #d3ad7f;
+ }
+ .heading1{
+    text-align: center;
+    color:#fff;
+    text-transform: none;
+    padding-bottom: 3.5rem;
+    font-size: 2rem;
+    margin-top: 1rem;
+} 
